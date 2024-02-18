@@ -3,7 +3,7 @@ import csv
 
 import requests
 
-
+# ควรมี Authentication
 parser = configparser.ConfigParser()
 parser.read("pipeline.conf")
 host = parser.get("api_config", "host")
