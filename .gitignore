@@ -183,3 +183,7 @@ pyrightconfig.json
 
 # DEB Workshop
 de-lifecycle
+
+00-bootcamp-project\dataworkshopday2-deb3-load-files-to-bigquery-3c5e0f358c17.json
+00-bootcamp-project\dataworkshopday2-deb3-uploading-files-to-gcs-f9233f86727d.json
+03-data-lake-with-google-cloud-storage\examples\uploading-to-gcs\dataworkshopday2-deb3-uploading-files-to-gcs-f9233f86727d.json
