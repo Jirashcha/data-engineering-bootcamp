@@ -10,13 +10,13 @@ BUSINESS_DOMAIN = "greenery"
 location = "asia-southeast1"
 
 # Prepare and Load Credentials to Connect to GCP Services
-keyfile_gcs = "/workspaces/data-engineering-bootcamp/00-bootcamp-project/dataworkshopday2-deb3-uploading-files-to-gcs-f9233f86727d.json"
+keyfile_gcs = os.environ.get("KEYFILE_gcs_PATH")
 service_account_info_gcs = json.load(open(keyfile_gcs))
 credentials_gcs = service_account.Credentials.from_service_account_info(
     service_account_info_gcs
 )
 
-keyfile_bigquery = "/workspaces/data-engineering-bootcamp/00-bootcamp-project/dataworkshopday2-deb3-load-files-to-bigquery-3c5e0f358c17.json"
+keyfile_bigquery = os.environ.get("KEYFILE_bigQ_PATH")
 service_account_info_bigquery = json.load(open(keyfile_bigquery))
 credentials_bigquery = service_account.Credentials.from_service_account_info(
     service_account_info_bigquery

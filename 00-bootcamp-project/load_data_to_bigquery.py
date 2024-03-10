@@ -11,7 +11,7 @@ DATA_FOLDER = "data"
 # จะทำให้เราไม่ต้อง Hardcode Path ของไฟล์ไว้ในโค้ดของเรา
 # keyfile = os.environ.get("KEYFILE_PATH")
 
-keyfile = "/workspaces/data-engineering-bootcamp/00-bootcamp-project/dataworkshopday2-deb3-load-files-to-bigquery-3c5e0f358c17.json"
+keyfile = os.environ.get("KEYFILE_bigQ_PATH")
 service_account_info = json.load(open(keyfile))
 credentials = service_account.Credentials.from_service_account_info(service_account_info)
 project_id = "dataworkshopday2"

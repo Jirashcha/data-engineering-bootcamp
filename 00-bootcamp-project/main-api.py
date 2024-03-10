@@ -1,6 +1,5 @@
 import configparser
 import csv
-
 import requests
 
 # ควรมี Authentication
