@@ -22,10 +22,10 @@ credentials_bigquery = service_account.Credentials.from_service_account_info(
     service_account_info_bigquery
 )
 
-project_id = "dataworkshopday2"
+project_id = os.environ.get("PROJECT_ID")
 
 # Load data from Local to GCS
-bucket_name = "deb3-bootcamp-06"
+bucket_name = os.environ.get("BUCKET_NAME")
 storage_client = storage.Client(
     project=project_id,
     credentials=credentials_gcs,
